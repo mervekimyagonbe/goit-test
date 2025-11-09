@@ -1,0 +1,211 @@
+
+* {
+  margin: 0; /* Varsayılan dış boşlukları sıfırlar */
+  padding: 0; /* Varsayılan iç boşlukları sıfırlar */
+  box-sizing: border-box; /* Genişlik ve yükseklik ölçümlerine padding ve border'ı dahil eder. Böylece boyut hesaplamaları daha tahmin edilebilir olur. */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Yazı tipi olarak Arial veya benzer sans-serif fontlar kullanılır */
+  background-color: #1a1a2e; /* Sayfa arka plan rengi koyu lacivert */
+  color: white; /* Metin rengi beyaz */
+  min-height: 100vh; /* Yükseklik minimum olarak tüm ekran yüksekliğini (viewport height) kaplasın.Bir telefon ya da bilgisayar ekranının yüksekliği ne kadarsa, Bu bölüm o kadar uzun olur. */
+}
+
+/* ========== Navigation Bar ========== */
+.navbar {
+  display: flex; /* Öğeleri yatay hizalar */
+  justify-content: space-between; /* Öğeleri iki uca yaslar */
+  align-items: center; /* Öğeleri dikeyde ortalar */
+  padding: 20px 50px; /* Üst-alt 20px, sağ-sol 50px boşluk */
+  background-color: #1a1a2e; /* Arka plan rengi koyu lacivert */
+}
+
+.logo h2 {
+  color: #c084fc; /* Logo metin rengi mor */
+  font-size: 28px; /* Font boyutu */
+  font-weight: bold; /* Kalın yazı */
+}
+
+.nav-links {
+  display: flex; /* Liste elemanlarını yatayda dizer */
+  list-style: none; /* Madde işaretlerini kaldırır */
+  gap: 30px; /* Elemanlar arası 30px boşluk */
+}
+
+.nav-links a {
+  color: white; /* Bağlantı metin rengi beyaz */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+  font-size: 16px; /* Yazı boyutu */
+}
+
+.star-button {
+  background-color: #c084fc; /* Arka plan rengi mor */
+  color: white; /* Yazı rengi beyaz */
+  padding: 8px 12px; /* İç boşluklar */
+  border-radius: 8px; /* Köşeleri yuvarlatır */
+  font-size: 18px; /* Yazı boyutu */
+}
+
+/* ========== Ana Sayfa (Home Section) ========== */
+.home-section {
+  padding: 50px; /* Tüm kenarlardan 50px boşluk */
+  min-height: 80vh; /* En az %80 ekran yüksekliği kadar alan kaplar */
+  display: flex; /* İçeriği yatayda hizalar */
+  align-items: center; /* Dikeyde ortalar */
+}
+
+.home-content {
+  display: flex; /* İçeriği yatayda böler */
+  justify-content: space-between; /* Aralarını açar */
+  align-items: center; /* Dikeyde ortalar */
+  width: 100%; /* Kapsayıcı genişliği %100 */
+  max-width: 1200px; /* Maksimum genişlik 1200px */
+  margin: 0 auto; /* Ortalamak için otomatik margin */
+}
+
+.text-section {
+  flex: 1; /* Eşit genişlik alır */
+}
+
+.greeting {
+  font-size: 48px; /* Yazı boyutu büyük */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+.name {
+  font-size: 42px; /* Yazı boyutu */
+  margin-bottom: 15px; /* Alt boşluk */
+}
+
+.purple {
+  color: #c084fc; /* Mor renk */
+}
+
+.title {
+  font-size: 32px; /* Başlık boyutu */
+  color: #c084fc; /* Mor renk */
+  margin-top: 30px; /* Üst boşluk */
+}
+
+/* ========== Görsel Bölümü ========== */
+.image-section {
+  flex: 1; /* Eşit yer kaplar */
+  display: flex; /* İçeriği hizalamak için */
+  justify-content: center; /* Ortalar */
+  align-items: center; /* Dikeyde ortalar */
+}
+
+.developer-image {
+  text-align: center; /* Metin ve emoji ortalanır */
+}
+
+.computer {
+  font-size: 100px; /* Büyük emoji */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+.person {
+  font-size: 80px; /* Biraz daha küçük emoji */
+}
+
+/* ========== Hakkımda Bölümü ========== */
+.about-section {
+  padding: 100px 50px; /* Üst-alt 100px, sağ-sol 50px boşluk */
+  background-color: #16213e; /* Arka plan koyu mavi */
+}
+
+.about-content {
+  display: flex; /* İçeriği yatayda böler */
+  justify-content: space-between; /* Öğeler arasında boşluk */
+  align-items: center; /* Dikey ortalama */
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 0 auto; /* Ortalanır */
+  gap: 50px; /* Öğeler arası boşluk */
+}
+
+.about-text {
+  flex: 2; /* Yazı bölümü daha fazla yer kaplar */
+}
+
+.about-text h2 {
+  font-size: 42px; /* Başlık boyutu */
+  margin-bottom: 40px; /* Alt boşluk */
+  text-align: center; /* Ortalanmış */
+}
+
+.about-text p {
+  font-size: 18px; /* Paragraf yazı boyutu */
+  line-height: 1.8; /* Satır aralığı */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+.profile-image {
+  flex: 1; /* Görsel bölümü daha dar */
+  display: flex; /* İçeriği ortalamak için */
+  justify-content: center; /* Ortalanır */
+}
+
+.profile-circle {
+  width: 250px; /* Çapı 250px */
+  height: 250px; /* Yükseklik 250px */
+  border-radius: 50%; /* Tam daire yapmak için */
+  background-color: #c084fc; /* Mor arka plan */
+  display: flex; /* Ortalamak için */
+  align-items: center; /* Dikey ortalama */
+  justify-content: center; /* Yatay ortalama */
+}
+
+.avatar {
+  font-size: 100px; /* Emoji boyutu */
+}
+
+/* ========== Sosyal Medya Bölümü ========== */
+.social-section {
+  padding: 80px 50px; /* Üst-alt 80px, sağ-sol 50px boşluk */
+  text-align: center; /* Tüm içerik ortalanır */
+  background-color: #1a1a2e; /* Arka plan rengi */
+}
+
+.social-section h2 {
+  font-size: 36px; /* Başlık boyutu */
+  margin-bottom: 15px; /* Alt boşluk */
+}
+
+.social-section p {
+  font-size: 18px; /* Açıklama yazısı */
+  margin-bottom: 40px; /* Alt boşluk */
+}
+
+.social-icons {
+  display: flex; /* İkonları yatay hizalar */
+  justify-content: center; /* Ortalar */
+  gap: 30px; /* İkonlar arası boşluk */
+}
+
+.social-icon {
+  display: block; /* Blok eleman yapılır */
+  width: 60px; /* Genişlik 60px */
+  height: 60px; /* Yükseklik 60px */
+  border-radius: 50%; /* Daire şeklinde */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Hafif beyaz, yarı şeffaf arka plan */
+  text-decoration: none; /* Alt çizgi yok */
+  font-size: 24px; /* Emoji boyutu */
+  line-height: 60px; /* Dikey ortalama için satır yüksekliği */
+  text-align: center; /* Yatay ortalama */
+  
+}
+.profile-photo {
+  width: 200px;          /* genişlik */
+  height: 200px;         /* yükseklik */
+  border-radius: 50%;    /* yuvarlak görünüm */
+  object-fit: cover;     /* fotoğrafı kırpmadan orantılı doldurur */
+  border: 3px solid #a855f7; /* mor bir çerçeve ekler */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* hafif gölge */
+}
+
